@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "THADEAS | Prague DJ & Musician",
+    "description": "Official website for THADEAS, Prague DJ and musician. Listen to mixes and follow current updates.",
+    "ogDescription": "Prague-based DJ and musician delivering high-energy electronic sets for clubs, bars, private events and late-night floors."
+  },
+  "artist": {
+    "name": "THADEAS",
+    "base": "Prague, Czech Republic",
+    "role": "DJ & Musician",
+    "summary": "Prague-based DJ and musician delivering high-energy electronic sets for clubs, bars, private events and late-night floors.",
+    "bookingEmail": "thadeasofficial@gmail.com"
+  },
+  "about": {
+    "heading": "About THADEAS",
+    "paragraphs": [
+      "THADEAS is a Prague-based DJ and musician.",
+      "For bookings, press materials and event information, use the contact link below."
+    ]
+  },
+  "music": {
+    "soundCloudUrl": "https://soundcloud.com/thadeas",
+    "soundCloudText": "Hear current THADEAS mixes including live sets from Dance Radio, Musart guest mixes and other exclusive recordings."
+  },
+  "socials": {
+    "instagram": "https://www.instagram.com/thadeasmusic/",
+    "soundcloud": "https://soundcloud.com/thadeas",
+    "facebook": "https://www.facebook.com/ThadeasMusic"
+  },
+  "pressPack": {
+    "dropboxUrl": "",
+    "placement": "footer"
+  },
+  "events": []
+}

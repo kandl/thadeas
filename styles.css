@@ -174,8 +174,7 @@ button:focus-visible {
 .site-nav a,
 .button,
 .booking-links a,
-.social-links a,
-.ticket-card {
+.social-links a {
   transition:
     background-color 160ms ease,
     border-color 160ms ease,
@@ -290,6 +289,17 @@ button:focus-visible {
   color: var(--accent);
 }
 
+.button--ink {
+  border-color: rgba(2, 7, 19, 0.2);
+  color: var(--paper-ink);
+}
+
+.button--ink:hover {
+  border-color: var(--paper-ink);
+  background: var(--paper-ink);
+  color: var(--paper);
+}
+
 .button--light {
   background: var(--foreground);
   color: var(--background);
@@ -392,14 +402,6 @@ button:focus-visible {
   max-width: 44rem;
 }
 
-.section-header {
-  display: grid;
-  gap: 2rem;
-  align-items: end;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 2.5rem;
-}
-
 .section-title {
   max-width: 48rem;
   margin: 1rem 0 0;
@@ -443,6 +445,95 @@ button:focus-visible {
   line-height: 1.14;
 }
 
+.section-header {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.event-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.event-card {
+  display: grid;
+  gap: 1.25rem;
+  border: 1px solid rgba(2, 7, 19, 0.14);
+  background: rgba(255, 255, 255, 0.34);
+  padding: 1.25rem;
+}
+
+.event-card__date {
+  margin: 0;
+  color: rgba(2, 7, 19, 0.54);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.event-card__title {
+  margin: 0;
+  color: var(--paper-ink);
+  font-size: 1.5rem;
+  font-weight: 950;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.event-card__meta,
+.event-card__note {
+  margin: 0.75rem 0 0;
+  color: var(--paper-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.event-card__note {
+  color: rgba(2, 7, 19, 0.52);
+}
+
+.event-card__actions,
+.ticket-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.ticket-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.ticket-card {
+  display: flex;
+  min-height: 14rem;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  padding: 1.25rem;
+}
+
+.ticket-card__meta {
+  margin: 0;
+  color: var(--foreground-soft);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.ticket-card__title {
+  margin: 1rem 0 2rem;
+  color: var(--foreground);
+  font-size: 1.75rem;
+  font-weight: 950;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .press-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -455,121 +546,6 @@ button:focus-visible {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   background: #000000;
-}
-
-.date-list {
-  display: grid;
-  gap: 1rem;
-  padding-top: 2rem;
-}
-
-.date-card {
-  display: grid;
-  gap: 1.5rem;
-  border: 1px solid var(--line);
-  padding: 1.25rem;
-  background: rgba(255, 255, 255, 0.025);
-}
-
-.date-card__date {
-  color: var(--accent);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 0.875rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.date-card__main h3 {
-  margin: 0;
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 950;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.date-card__venue {
-  margin: 0.75rem 0 0;
-  color: rgba(245, 251, 255, 0.76);
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.date-card__note {
-  max-width: 48rem;
-  margin: 0.75rem 0 0;
-  color: var(--foreground-muted);
-  font-size: 0.9375rem;
-  line-height: 1.7;
-}
-
-.ticket-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  align-items: flex-start;
-}
-
-.ticket-status {
-  color: var(--foreground-soft);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 0.6875rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.tickets-layout {
-  display: grid;
-  gap: 3rem;
-}
-
-.ticket-grid {
-  display: grid;
-  gap: 0.75rem;
-}
-
-.ticket-card {
-  display: flex;
-  min-height: 9rem;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid rgba(2, 7, 19, 0.14);
-  background: rgba(2, 7, 19, 0.04);
-  padding: 1.25rem;
-  color: var(--paper-ink);
-}
-
-.ticket-card:hover {
-  border-color: rgba(2, 7, 19, 0.38);
-  background: rgba(2, 7, 19, 0.08);
-}
-
-.ticket-card span {
-  color: rgba(2, 7, 19, 0.52);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 0.625rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.ticket-card strong {
-  font-size: 1.25rem;
-  font-weight: 950;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.ticket-card--primary {
-  background: var(--paper-ink);
-  color: var(--paper);
-}
-
-.ticket-card--primary span {
-  color: rgba(232, 243, 255, 0.58);
-}
-
-.ticket-card--muted {
-  color: var(--paper-muted);
 }
 
 .booking-header {
@@ -630,23 +606,6 @@ button:focus-visible {
   color: var(--accent);
 }
 
-.site-footer {
-  display: grid;
-  gap: 1.5rem;
-  align-items: center;
-  border-top: 1px solid var(--line);
-  margin-top: 3rem;
-  padding-top: 2rem;
-}
-
-.footer-copy {
-  max-width: 44rem;
-  margin: 0.75rem 0 0;
-  color: var(--foreground-muted);
-  font-size: 0.9375rem;
-  line-height: 1.7;
-}
-
 @media (min-width: 640px) {
   :root {
     --page-padding: 2rem;
@@ -675,7 +634,7 @@ button:focus-visible {
   }
 
   .ticket-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -703,13 +662,13 @@ button:focus-visible {
     padding-right: 0;
   }
 
-  .date-card {
+  .event-card {
     grid-template-columns: 9rem minmax(0, 1fr) auto;
-    align-items: center;
+    align-items: start;
   }
 
-  .ticket-actions {
-    align-items: flex-end;
+  .event-card__actions {
+    justify-content: flex-end;
   }
 }
 
@@ -786,32 +745,36 @@ button:focus-visible {
     grid-template-columns: 1fr auto;
   }
 
-  .section-header,
-  .tickets-layout,
-  .site-footer {
-    grid-template-columns: 1fr auto;
-  }
-
   .booking-title {
     font-size: 6rem;
   }
 
   .booking-links {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .ticket-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    align-items: flex-start;
+    column-gap: 0;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
+  .header-actions {
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 
 @media (max-width: 460px) {
-  .site-header {
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .header-actions {
-    width: 100%;
-    justify-content: space-between;
-  }
-
   .site-logo img {
     width: 8.5rem;
   }
