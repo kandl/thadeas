@@ -22,3 +22,6 @@ Then open <http://localhost:8080>.
 ## Deploy
 
 Deploy the folder as static files. No Node.js, Next.js, build command, or package install is required.
+
+This repository includes a GitHub Pages workflow at `.github/workflows/pages.yml`.
+Pushes to `main` deploy the current static files to GitHub Pages.
