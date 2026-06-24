@@ -9,6 +9,14 @@ This folder is a static HTML/CSS website for THADEAS.
 - `assets/` contains optimized image and logo assets used by the page.
 - `public/design-*` contains older static design explorations.
 
+## Content Updates
+
+- Edit the artist bio in the `#about` section of `index.html`.
+- Add confirmed events by duplicating the event card in the `#tour-dates` section.
+- Add event-specific Smsticket or club ticketing URLs in `#tour-dates` and `#tickets`.
+- Replace the press pack mail link with a Dropbox shared URL when the final press pack link is available.
+- Keep Instagram and SoundCloud as the primary social links; Facebook is included as an event-focused secondary link.
+
 ## Run locally
 
 Open `index.html` directly in a browser, or serve the folder with any static server:
