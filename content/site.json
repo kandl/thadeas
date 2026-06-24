@@ -31,5 +31,79 @@
     "dropboxUrl": "",
     "placement": "footer"
   },
-  "events": []
+  "events": [
+    {
+      "date": "2026-06-24",
+      "place": "Origin Bar, Prague",
+      "name": "Student Wednesdays",
+      "infoUrl": "https://www.originbar.cz/en/events"
+    },
+    {
+      "date": "2026-06-27",
+      "place": "Medusa Prague",
+      "name": "Medusa Prague",
+      "note": "Live DJ show"
+    },
+    {
+      "date": "2026-07-03",
+      "place": "Medusa Prague",
+      "name": "Medusa Prague",
+      "note": "Live DJ show"
+    },
+    {
+      "date": "2026-07-04",
+      "displayDate": "4 Jul 2026, 23:00",
+      "place": "Roxy Prague",
+      "name": "Mainstage Party (CZ)",
+      "note": "Lineup: Telly, Thadeas, Unixa. Tickets: 250 CZK.",
+      "ticketLinks": [
+        {
+          "label": "Roxy tickets",
+          "url": "https://www.roxy.cz/events/detail/4933/mainstage-party"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "place": "Dance Radio FM",
+      "name": "Dance Radio FM",
+      "note": "Clubmix s Milanem Krouzilem",
+      "infoUrl": "https://www.danceradio.cz/"
+    },
+    {
+      "date": "2026-07-11",
+      "displayDate": "11 Jul 2026, 15:00",
+      "place": "Panska zahrada, Strakonice",
+      "name": "Strako Beats Fest 2026",
+      "note": "w/ Renne Dang, Matamar, Audia, Samko, Thadeas, Krais, Luko, Ufo",
+      "ticketLinks": [
+        {
+          "label": "Smsticket",
+          "url": "https://www.smsticket.cz/vstupenky/58807-strako-beats-fest-2026-w-renne-dang-panska-zahrada-strakonice-matamar"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "place": "Roxy Prague",
+      "name": "Mainstage Party (CZ)"
+    },
+    {
+      "date": "2026-08-29",
+      "place": "Medusa Prague",
+      "name": "Medusa Prague",
+      "note": "Live DJ show"
+    },
+    {
+      "date": "2026-08-30",
+      "place": "Origin Bar, Prague",
+      "name": "Open Window",
+      "infoUrl": "https://www.originbar.cz"
+    },
+    {
+      "date": "2026-09-04",
+      "place": "Afterparty Plzen",
+      "name": "Silent Disco"
+    }
+  ]
 }

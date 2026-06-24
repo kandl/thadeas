@@ -274,6 +274,7 @@ function normalizeEvent(event, index) {
     place: requiredString(event, 'place', pathName),
     name: requiredString(event, 'name', pathName),
     note: optionalString(event, 'note', pathName),
+    infoUrl: optionalWebUrl(event, 'infoUrl', pathName),
     ticketLinks: normalizeTicketLinks(event.ticketLinks, `${pathName}.ticketLinks`)
   };
 }
@@ -435,12 +436,16 @@ ${eventCards}
 }
 
 function renderEventCard(event) {
-  const ticketActions =
-    event.ticketLinks.length > 0
+  const actionLinks = [
+    ...event.ticketLinks.map((ticketLink) => renderTicketButton(ticketLink, 'button--ink')),
+    event.infoUrl ? renderInfoButton(event.infoUrl) : ''
+  ].filter(Boolean);
+  const actions =
+    actionLinks.length > 0
       ? `
-            <div class="event-card__actions">
-${event.ticketLinks.map((ticketLink) => renderTicketButton(ticketLink, 'button--ink')).join('\n')}
-            </div>`
+              <div class="event-card__actions">
+${actionLinks.join('\n')}
+              </div>`
       : '';
   const note = event.note
     ? `
@@ -454,7 +459,7 @@ ${event.ticketLinks.map((ticketLink) => renderTicketButton(ticketLink, 'button--
               <div class="event-card__main">
                 <h3 class="event-card__title">${escapeHtml(event.name)}</h3>
                 <p class="event-card__meta">${escapeHtml(event.place)}</p>${note}
-              </div>${ticketActions}
+              </div>${actions}
             </article>`;
 }
 
@@ -500,6 +505,17 @@ function renderTicketButton(ticketLink, variant) {
                 rel="noopener noreferrer"
               >
                 ${escapeHtml(ticketLink.label)}
+              </a>`;
+}
+
+function renderInfoButton(url) {
+  return `              <a
+                class="button button--ink"
+                href="${escapeAttr(url)}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                More info
               </a>`;
 }
 

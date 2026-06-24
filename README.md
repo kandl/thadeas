@@ -30,6 +30,7 @@ Each visible event needs:
 - `place`: venue and city.
 - `name`: event name.
 - `note`: optional public note.
+- `infoUrl`: optional non-ticket event or venue information link.
 - `ticketLinks`: optional array of real ticket links.
 
 The repository is public, so do not put sensitive unpublished information in `content/site.json`.
